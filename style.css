@@ -1,0 +1,653 @@
+/* font */
+font {
+  font-family: "Montaga", serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Sacramento", cursive;
+  font-family: "Montaga", serif;
+}
+
+:root {
+  --primary-color: #344e41;
+  --text-color: #5a5a5a;
+  --text-colorv1: #fff;
+  --text-colorv2: #344e41;
+  --poppins: "Poppins", sans-serif;
+  --sacramento: "Sacramento", cursive;
+  --montaga: "Montaga", serif;
+  --montserrat: "Montserrat", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montaga", serif;
+  box-sizing: border-box;
+}
+
+.top h1 {
+  font-family: var(--sacramento);
+  font-weight: 500;
+  font-size: 3rem;
+  padding: 0 7%;
+}
+.top span {
+  font-family: var(--montaga);
+  font-size: 1.2rem;
+}
+.top h1 img {
+  width: 2rem;
+}
+.top .leaf {
+  position: absolute;
+  top: -2rem;
+  width: 18rem;
+  left: 0;
+}
+.top .leaf-2 {
+  position: absolute;
+  top: -4rem;
+  right: 0;
+  transform: rotate(160deg);
+  width: 18rem;
+}
+.navbar {
+  width: 100%;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.navbar .container-fluid {
+  padding: 0 7%;
+  margin: auto;
+}
+.navbar .container-fluid .navbar-nice {
+  list-style: none;
+  margin: 0 1rem;
+}
+.navbar .container-fluid .navbar-nice .nav-link {
+  font-size: 1.6rem;
+}
+.hero {
+  height: 100vh;
+  background-image: url(./img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.hero h1 {
+  font-size: 7rem;
+  text-shadow: 2px 1px 10px rgba(0, 0, 0, 0.5);
+  color: var(--text-colorv1);
+  font-family: "Sacramento", cursive;
+  font-weight: 600;
+}
+.hero span {
+  font-size: 3rem;
+  color: var(--text-colorv1);
+  text-shadow: 2px 1px 10px rgba(0, 0, 0, 0.5);
+}
+.hero h4 {
+  font-size: 2rem;
+  color: var(--text-colorv1);
+  text-shadow: 2px 1px 10px rgba(0, 0, 0, 0.5);
+}
+.hero a {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--text-colorv2);
+  border: none;
+  color: var(--text-colorv1);
+}
+/* story */
+.story {
+  padding: 5rem 0;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.story::before {
+  content: "";
+  width: 100%;
+  height: 100vh;
+  background-image: url(./img/nice.jpg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+.story .container-fluid {
+  padding: 0 7%;
+  position: relative;
+}
+.story h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: var(--montaga);
+  margin: 1rem 0;
+  color: var(--primary-color);
+}
+.story span {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: var(--montaga);
+  margin: 1rem 0;
+  color: var(--text-color);
+}
+.story p {
+  width: 100%;
+  max-width: 60rem;
+  margin: auto;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+.story .leaf {
+  width: 50rem;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: -12rem;
+  opacity: 0.5;
+  transform: rotate(160deg);
+}
+.story .daun-bawah {
+  width: 50rem;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
+  opacity: 0.5;
+}
+.story .card {
+  width: 30rem;
+  height: 40rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  background: transparent;
+  margin: 3rem 4rem;
+  position: relative;
+}
+.story .card .card-img-top {
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  margin: auto;
+}
+.story .card h4 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  font-family: var(--montaga);
+  color: var(--text-colorv2);
+}
+.story .card h5 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+.story .card p {
+  font-size: 1.3rem;
+  color: var(--text-color);
+}
+.story .mid .roses {
+  position: absolute;
+  width: 15rem;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card .roses-3 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10rem;
+}
+.card .roses-5 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10rem;
+}
+.maps {
+  padding: 6rem 0;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.maps .container-fluid {
+  padding: 0 7%;
+}
+.maps .header-map h2,
+.story-nice h2,
+.album h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: var(--montaga);
+  margin: 1rem 0;
+  color: var(--primary-color);
+  text-align: center;
+}
+.maps .header-map p,
+.story-nice p {
+  width: 100%;
+  max-width: 60rem;
+  margin: auto;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--text-color);
+  text-align: center;
+}
+.maps .information .acara {
+  width: 100%;
+  max-width: 17rem;
+}
+.maps .information .acara i {
+  font-size: 3rem;
+  color: var(--text-colorv2);
+}
+.maps .information .acara h6 {
+  font-size: 1.5rem;
+  color: var(--text-colorv2);
+  font-weight: 600;
+  font-family: var(--montaga);
+}
+.maps .information .acara span {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  font-weight: 600;
+}
+.maps .google-map {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  flex-direction: column;
+  align-items: center;
+}
+.maps .google-map .maps-nice {
+  width: 90%;
+  height: 30rem;
+  box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.maps .google-map .btn {
+  background-color: var(--text-colorv2);
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+.maps .daun-atas {
+  position: absolute;
+  top: -10rem;
+  right: -10rem;
+  transform: rotate(160deg);
+  width: 50rem;
+  z-index: -1;
+  opacity: 0.5;
+}
+.maps .daun-atas-kiri {
+  position: absolute;
+  top: -10rem;
+  left: -15rem;
+  transform: rotate(360deg);
+  width: 50rem;
+  z-index: -1;
+  opacity: 0.5;
+}
+.maps .flower {
+  position: absolute;
+  top: 40rem;
+  transform: translate(-50%, -50%);
+  width: 50rem;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.story-nice {
+  background-color: #d0ebdc;
+  padding: 7rem 0;
+}
+.timeLine {
+  list-style: none;
+  padding: 1.4rem 0;
+  margin-top: 1rem;
+  position: relative;
+}
+.timeLine h3 {
+  font-family: var(--montaga);
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--text-colorv2);
+}
+.timeLine p {
+  font-family: var(--montaga);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-color);
+  text-align: start;
+}
+
+.timeLine::before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  width: 3px;
+  background-color: #ccc;
+  left: 50%;
+}
+
+.timeLine li {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.timeLine li::before,
+.timeLine li::after {
+  content: "";
+  display: table;
+}
+
+.timeLine li::after {
+  clear: both;
+}
+
+.timeLine li .timeLine-img {
+  width: 160px;
+  height: 160px;
+  background-color: #121916;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.timeLine li .timeLine-panel {
+  width: 40%;
+  float: left;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  position: relative;
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+
+.timeLine li .timeLine-panel::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-top: 15px solid transparent;
+  border-left: 15px solid var(--pink);
+  border-right: 0 solid var(--pink);
+  border-bottom: 15px solid transparent;
+  top: 80px;
+  right: -15px;
+}
+
+.timeLine li .timeLine-panel::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  top: 81px;
+  right: -13px;
+}
+
+.timeLine li.timeLine-inverted .timeLine-panel {
+  float: right;
+}
+.timeLine li.timeLine-inverted .timeLine-panel::before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+.timeLine li.timeLine-inverted .timeLine-panel::after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -13px;
+  right: auto;
+}
+
+/* album foto */
+.album {
+  padding: 7rem 0;
+}
+.album .container-fluid {
+  padding: 0 7%;
+}
+.album .foto {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.album .foto div {
+  position: relative;
+}
+.album .foto div:hover {
+  position: relative;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.album .foto div::before {
+  position: absolute;
+  opacity: 0.5;
+  content: "";
+  width: 20rem;
+  height: 20rem;
+  background-color: #000;
+}
+.album .foto div:hover::before {
+  opacity: 0.7; /* Change opacity on hover */
+  background-color: transparent;
+}
+.album .foto div p {
+  bottom: 0;
+  color: var(--text-colorv1);
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+.album .foto div:hover p {
+  opacity: 0;
+}
+.album .foto img {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.2s ease-in-out;
+}
+/* rsvp */
+.rsvp {
+  padding: 7rem 0;
+}
+
+.rsvp .container-fluid {
+  padding: 0 7%;
+}
+.rsvp .nice {
+  width: 100%;
+  max-width: 40rem;
+  background-color: #ffffff;
+  padding: 2rem 1rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: auto;
+  border-radius: 20px;
+}
+.rsvp h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: var(--sacramento);
+  text-align: center;
+  color: var(--primary-color);
+}
+.rsvp span {
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: var(--montaga);
+  text-align: center;
+  color: var(--primary-color);
+}
+.rsvp .nice label {
+  font-size: 1.2rem;
+  text-align: start;
+  font-weight: 500;
+}
+.rsvp .nice input {
+  font-size: 1.2rem;
+  text-align: start;
+  font-weight: 500;
+  outline: none;
+}
+.rsvp .btn {
+  width: 7rem;
+  text-align: center;
+}
+.rsvp .roses-last {
+  position: absolute;
+  bottom: 25rem;
+  width: 70rem;
+  z-index: -1;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+.rsvp .sosmed {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+}
+.rsvp .sosmed div {
+  margin-top: 2rem;
+  width: 20rem;
+  height: 6rem;
+  text-align: center;
+  background-color: #ffffff;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.rsvp .sosmed div a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: var(--text-colorv2);
+  font-weight: 500;
+}
+@media (max-width: 1366px) {
+  html {
+    font-size: 70.5%;
+  }
+  .timeLine::before {
+    left: 60px;
+  }
+  .timeLine li .timeLine-img {
+    left: 15px;
+    margin-left: 45px;
+    top: 16px;
+  }
+  .timeLine li .timeLine-panel {
+    width: calc((100% - 200px));
+    float: right;
+  }
+  .timeLine li .timeLine-panel::before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+  .timeLine li .timeLine-panel::after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -13px;
+    right: auto;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .story .card {
+    width: 100%;
+    text-align: start !important;
+  }
+  .story .card.wife {
+    width: 100%;
+    text-align: end !important;
+  }
+  .story .card .card-img-top {
+    margin: 1rem;
+  }
+  .story .card .card-img-top.right {
+    margin-left: auto;
+  }
+
+  .card .roses-3 {
+    position: absolute;
+    transform: translate(100%, -50%);
+    top: 6rem;
+    right: 4rem;
+    width: 10rem;
+  }
+  .card .roses-5 {
+    position: absolute;
+    top: 0;
+    left: 4rem;
+    transform: translate(-50%, 50%);
+  }
+  .story .daun-bawah {
+    width: 50rem;
+    position: absolute;
+    z-index: -1;
+    left: -15rem;
+    bottom: 0;
+    opacity: 0.5;
+  }
+  .timeLine li .timeLine-img {
+    width: 140px;
+    height: 140px;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 55.5%;
+  }
+  .navbar .container-fluid .navbar-nice .nav-link {
+    font-size: 1.3rem;
+  }
+  .timeLine li .timeLine-img {
+    width: 100px;
+    height: 100px;
+  }
+  .timeLine li .timeLine-panel {
+    width: 65%;
+    transform: translateX(-10px);
+  }
+  .timeLine li .timeLine-panel::before {
+    top: 30px;
+  }
+  .timeLine li .timeLine-panel::after {
+    top: 31px;
+  }
+}
